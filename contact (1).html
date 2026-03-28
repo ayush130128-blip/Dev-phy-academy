@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dev Physics Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dev<span>Physics.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="admission.html" class="btn btn-primary">Admissions Open</a>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have questions about our batches, fees, or study material? We're here to help.</p>
+        </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="container contact-layout">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Reach out to us directly or visit our academy during working hours.</p>
+                <div class="info-list">
+                    <div class="info-item"><span class="info-icon">📍</span><div><h4>Visit Us</h4><p>Chandralok Colony, Basdiliya, Jail Road, Naugarh, Siddharthnagar 272207</p></div></div>
+                    <div class="info-item"><span class="info-icon">📞</span><div><h4>Call Us</h4><p>+91 94735 74524</p></div></div>
+                    <div class="info-item"><span class="info-icon">✉️</span><div><h4>Email Us</h4><p>hello@devphysics.com</p></div></div>
+                </div>
+                
+                <div style="width: 100%; height: 250px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=27.2656043,83.0691387&hl=en&z=15&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Send a Message</h2>
+                <form id="contactForm" class="custom-form" action="https://formsubmit.co/akashkrmishra0@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group"><label>Full Name *</label><input type="text" name="name" required></div>
+                    <div class="form-group"><label>Email Address *</label><input type="email" name="email" required></div>
+                    <div class="form-group"><label>Your Message *</label><textarea name="message" rows="5" required></textarea></div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                    <div id="contactStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
